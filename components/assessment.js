@@ -30,27 +30,28 @@ export default function Assessment() {
                 It is important to evaluate the statements honestly and without over-thinking your
                 answers.
             </p>
-            <ol>
-                {questions.map((question, index) =>
-                    <li key={index}>
-                        {question}
-                        <br/>
-                        <br/>
-                        <form key={index}>
-                            <input type="radio" id={`usually${index}`} name="answer" value="3"/>
+            <form>
+                <ol>
+                    {questions.map((question, index) =>
+                        <li key={index}>
+                            {question}
+                            <br/>
+                            <br/>
+                            <input type="radio" id={`usually${index}`} name={`answer${index}`} value="3"/>
                             <label htmlFor={`usually${index}`}>Usually</label>
                             <br/>
-                            <input type="radio" id={`sometimes${index}`} name="answer" value="2"/>
+                            <input type="radio" id={`sometimes${index}`} name={`answer${index}`} value="2"/>
                             <label htmlFor={`sometimes${index}`}>Sometimes</label>
                             <br/>
-                            <input type="radio" id={`rarely${index}`} name="answer" value="1"/>
+                            <input type="radio" id={`rarely${index}`} name={`answer${index}`} value="1"/>
                             <label htmlFor={`rarely${index}`}>Rarely</label>
-                        </form>
-                        <br/>
-                    </li>
-                )}
-            </ol>
-            <input type="submit" value="Submit"/>
+                            <br/>
+                            <br/>
+                        </li>
+                    )}
+                </ol>
+                <input type="submit" value="Submit"/>
+            </form>
         </div>
     )
 }
