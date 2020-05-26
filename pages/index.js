@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Assessment from '../components/assessment';
 import React from 'react';
+import {Assessment} from '../components';
 
 export default function Home() {
     return (
