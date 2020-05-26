@@ -34,6 +34,8 @@ export default function Assessment() {
                 {questions.map((question, index) =>
                     <li key={index}>
                         {question}
+                        <br/>
+                        <br/>
                         <form key={index}>
                             <input type="radio" id="usually" name="answer" value="3"/>
                             <label htmlFor="usually">Usually</label>
@@ -44,6 +46,7 @@ export default function Assessment() {
                             <input type="radio" id="rarely" name="answer" value="1"/>
                             <label htmlFor="rarely">Rarely</label>
                         </form>
+                        <br/>
                     </li>
                 )}
             </ol>
