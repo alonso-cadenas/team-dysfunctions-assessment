@@ -37,14 +37,14 @@ export default function Assessment() {
                         <br/>
                         <br/>
                         <form key={index}>
-                            <input type="radio" id="usually" name="answer" value="3"/>
-                            <label htmlFor="usually">Usually</label>
+                            <input type="radio" id={`usually${index}`} name="answer" value="3"/>
+                            <label htmlFor={`usually${index}`}>Usually</label>
                             <br/>
-                            <input type="radio" id="sometimes" name="answer" value="2"/>
-                            <label htmlFor="sometimes">Sometimes</label>
+                            <input type="radio" id={`sometimes${index}`} name="answer" value="2"/>
+                            <label htmlFor={`sometimes${index}`}>Sometimes</label>
                             <br/>
-                            <input type="radio" id="rarely" name="answer" value="1"/>
-                            <label htmlFor="rarely">Rarely</label>
+                            <input type="radio" id={`rarely${index}`} name="answer" value="1"/>
+                            <label htmlFor={`rarely${index}`}>Rarely</label>
                         </form>
                         <br/>
                     </li>
