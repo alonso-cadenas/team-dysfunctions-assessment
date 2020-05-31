@@ -1,2 +1,2 @@
-export * from './assessment';
 export * from './score-list';
+export * from './question-list';

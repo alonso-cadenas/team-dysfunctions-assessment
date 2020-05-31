@@ -1,21 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Frequency, questions} from '../constants';
-import {ScoreList} from './score-list';
 
-export function Assessment() {
-    const [answers, setAnswers] = useState(new Array(questions.length));
-    const [showScores, setShowScores] = useState(false);
-    const updateAnswer = (event) => {
-        const index = event.target.name.replace('answer', '');
-        const newAnswers = [...answers];
-        newAnswers[index] = +event.target.value;
-        setAnswers(newAnswers);
-    };
-    const submitAnswers = (event) => {
-        event.preventDefault();
-        setShowScores(true);
-    };
-
+export function QuestionList({submitAnswers, updateAnswer}) {
     return (
         <div>
             <h2>Instructions</h2>
@@ -65,7 +51,6 @@ export function Assessment() {
                 </ol>
                 <input type="submit" value="Submit"/>
             </form>
-            {showScores && <ScoreList answers={answers}/>}
         </div>
     )
 }

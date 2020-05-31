@@ -3,7 +3,7 @@ import React from 'react';
 export function ScoreList({answers}) {
     return (
         <div>
-            <h2>Scores</h2>
+            <h2>Rubric</h2>
             <p>
                 A score of 8 or 9 is a probable indication that dysfunction is not a problem for our team.
                 <br/>
@@ -14,6 +14,8 @@ export function ScoreList({answers}) {
                 Regardless of your scores, it is important to keep in mind that every team needs
                 constant work, because without it, even the best ones deviate toward dysfunction.
             </p>
+
+            <h2>My Scores</h2>
             <p>Dysfunction #1 - Absence of Trust: <b>{answers[3] + answers[5] + answers[11]}</b></p>
             <p>Dysfunction #2 - Fear of Conflict: <b>{answers[0] + answers[6] + answers[9]}</b></p>
             <p>Dysfunction #3 - Lack of Commitment: <b>{answers[2] + answers[7] + answers[12]}</b></p>
