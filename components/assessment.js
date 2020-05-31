@@ -1,13 +1,19 @@
 import React, {useState} from 'react';
 import {Frequency, questions} from '../constants';
+import {ScoreList} from './score-list';
 
 export function Assessment() {
     const [answers, setAnswers] = useState(new Array(questions.length));
+    const [showScores, setShowScores] = useState(false);
     const updateAnswer = (event) => {
         const index = event.target.name.replace('answer', '');
         const newAnswers = [...answers];
-        newAnswers[index] = event.target.value;
+        newAnswers[index] = +event.target.value;
         setAnswers(newAnswers);
+    };
+    const submitAnswers = (event) => {
+        event.preventDefault();
+        setShowScores(true);
     };
 
     return (
@@ -18,7 +24,7 @@ export function Assessment() {
                 It is important to evaluate the statements honestly and without over-thinking your
                 answers.
             </p>
-            <form>
+            <form onSubmit={submitAnswers}>
                 <ol>
                     {questions.map((question, index) =>
                         <li key={index}>
@@ -31,6 +37,7 @@ export function Assessment() {
                                 name={`answer${index}`}
                                 value={Frequency.USUALLY}
                                 onChange={updateAnswer}
+                                required
                             />
                             <label htmlFor={`usually${index}`}>Usually</label>
                             <br/>
@@ -58,6 +65,7 @@ export function Assessment() {
                 </ol>
                 <input type="submit" value="Submit"/>
             </form>
+            {showScores && <ScoreList answers={answers}/>}
         </div>
     )
 }
