@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export function QuestionList({submitAnswers, updateAnswer}) {
     return (
-        <div>
+        <div id={'instructions'}>
             <h2>Instructions</h2>
             <p>
                 Use the scale below to indicate how each statement applies to your team.
