@@ -4,13 +4,12 @@ export function ScoreList({answers}) {
     return (
         <div>
             <h2>Rubric</h2>
+            <ul>
+                <li>A score of 8 or 9 is a probable indication that dysfunction is not a problem for our team.</li>
+                <li>A score of 6 or 7 indicates that the dysfunction could be a problem.</li>
+                <li>A score of 3 to 5 is probably an indication that team dysfunction needs to be addressed.</li>
+            </ul>
             <p>
-                A score of 8 or 9 is a probable indication that dysfunction is not a problem for our team.
-                <br/>
-                A score of 6 or 7 indicates that the dysfunction could be a problem.
-                <br/>
-                A score of 3 to 5 is probably an indication that team dysfunction needs to be addressed.
-                <br/>
                 Regardless of your scores, it is important to keep in mind that every team needs
                 constant work, because without it, even the best ones deviate toward dysfunction.
             </p>
