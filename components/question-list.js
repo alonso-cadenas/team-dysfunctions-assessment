@@ -1,5 +1,6 @@
 import React from 'react';
 import {Frequency, questions} from '../constants';
+import Link from 'next/link';
 
 export function QuestionList({submitAnswers, updateAnswer}) {
     return (
@@ -49,7 +50,13 @@ export function QuestionList({submitAnswers, updateAnswer}) {
                         </li>
                     )}
                 </ol>
-                <button type="submit">Submit</button>
+
+                <div className={'buttonContainer'}>
+                    <button type={'submit'}>Submit</button>
+                    <Link href="/" as={process.env.BACKEND_URL + '/'}>
+                        <button type={'button'}>Cancel</button>
+                    </Link>
+                </div>
             </form>
         </div>
     )

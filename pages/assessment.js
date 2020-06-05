@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import React, {useState} from 'react';
 import {questions} from '../constants';
-import {QuestionList, ScoreList} from '../components';
+import {Layout, QuestionList, ScoreList} from '../components';
 
 export default function Assessment() {
     const [answers, setAnswers] = useState(new Array(questions.length));
@@ -18,16 +17,12 @@ export default function Assessment() {
     };
 
     return (
-        <div>
-            <Link href="/" as={process.env.BACKEND_URL + '/'}>
-                <a>Home</a>
-            </Link>
-
+        <Layout>
             <h1>The Five Dysfunctions of a Team Online Assessment</h1>
 
             {!showScores && <QuestionList submitAnswers={submitAnswers} updateAnswer={updateAnswer}/>}
 
             {showScores && <ScoreList answers={answers}/>}
-        </div>
+        </Layout>
     )
 }

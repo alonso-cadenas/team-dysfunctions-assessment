@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Overview() {
+export function Overview() {
     return (
         <div id={'overview'}>
             <h2>Overview</h2>

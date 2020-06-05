@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function References() {
+export function References() {
     return (
         <div id={'references'}>
             <h2>References</h2>
