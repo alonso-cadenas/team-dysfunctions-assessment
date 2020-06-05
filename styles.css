@@ -1,0 +1,13 @@
+body {
+    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+    padding: 1.5rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
