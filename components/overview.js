@@ -1,14 +1,9 @@
-import Link from 'next/link'
 import React from 'react';
 
-export default function About() {
+export default function Overview() {
     return (
-        <div>
-            <Link href="/" as={process.env.BACKEND_URL + '/'}>
-                <a>Home</a>
-            </Link>
-
-            <h1>The Five Dysfunctions of a Team</h1>
+        <div id={'overview'}>
+            <h2>Overview</h2>
             <p>
                 In his book, <i>The Five Dysfunctions of a Team</i>, Patrick Lencioni describes five root causes of team
                 dysfunction that must be solved separately.
@@ -50,25 +45,6 @@ export default function About() {
                 accountable. If a team has lost sight of the need for achievement, the business
                 ultimately suffers.
             </p>
-
-            <h2>References</h2>
-            <p>
-                Sourced from The 2006 Linkage Excellence in Management & Leadership Series: Building and
-                Leading a High Performance Team, Patrick Lencioni
-            </p>
-            <cite id="CITEREFPatrick_Lencioni2002">
-                Patrick Lencioni (2002),
-                &nbsp;
-                <a rel="nofollow"
-                   href="https://books.google.com/books?id=AEIGAAAACAAJ">
-                    <i>The Five Dysfunctions of a Team</i>
-                </a>
-                , Jossey-Bass, ISBN
-                &nbsp;
-                <a href="https://en.wikipedia.org/wiki/Special:BookSources/0-7879-6075-6" title="Special:BookSources/0-7879-6075-6">
-                    <bdi>0-7879-6075-6</bdi>
-                </a>
-            </cite>
         </div>
-    )
+    );
 }

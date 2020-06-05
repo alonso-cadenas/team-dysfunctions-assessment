@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
+import Overview from '../components/overview';
+import References from '../components/references';
 
 export default function Home() {
     return (
@@ -9,18 +11,11 @@ export default function Home() {
                 This is an online assessment from <i>The Five Dysfunctions of a Team</i> by Patrick Lencioni, Jossey-Bass
                 Publishing, 2002.
             </p>
-
-            <p>
-                <Link href="/about" as={process.env.BACKEND_URL + '/about'}>
-                    <a>About</a>
-                </Link>
-            </p>
-
-            <p>
-                <Link href="/assessment" as={process.env.BACKEND_URL + '/assessment'}>
-                    <a>Take Assessment</a>
-                </Link>
-            </p>
+            <Link href={'/assessment'} as={process.env.BACKEND_URL + '/assessment'}>
+                <button>Take Assessment</button>
+            </Link>
+            <Overview/>
+            <References/>
         </div>
     )
 }
