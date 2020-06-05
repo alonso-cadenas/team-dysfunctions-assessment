@@ -9,5 +9,15 @@ body {
 button {
     display: block;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
 }
