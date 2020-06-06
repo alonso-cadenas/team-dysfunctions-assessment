@@ -12,7 +12,7 @@ export default function Home() {
                 Publishing, 2002.
             </p>
 
-            <div className={'buttonContainer'}>
+            <div className='buttonContainer'>
                 <Link href={'/assessment'} as={process.env.BACKEND_URL + '/assessment'}>
                     <button type={'button'}>Take Assessment</button>
                 </Link>

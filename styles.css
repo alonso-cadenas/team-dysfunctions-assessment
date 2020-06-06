@@ -11,6 +11,15 @@ button {
     cursor: pointer;
     font-size: 100%;
     margin: 0.5rem 1rem;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: #4299e1;
+    border-color: #2b6cb0;
+}
+
+button:hover {
+    background-color: #2b6cb0;
 }
 
 h1, .buttonContainer {
@@ -19,4 +28,14 @@ h1, .buttonContainer {
 
 p {
     text-align: justify;
+}
+
+.cancelButton {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.cancelButton:hover {
+    background-color: lightgray;
 }
