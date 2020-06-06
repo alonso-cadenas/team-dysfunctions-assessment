@@ -11,7 +11,7 @@ export function Layout(
     return (
         <div>
             <Head>
-                <title>The Five Dysfunctions of a Team Online Assessment</title>
+                <title>{isHome ? 'Home' : 'Take Assessment'} - The Five Dysfunctions of a Team Online Assessment</title>
                 <meta charSet='utf-8'/>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
                 <meta name='description'
