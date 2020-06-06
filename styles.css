@@ -7,7 +7,12 @@ body {
 }
 
 a {
-    color: #2b6cb0;
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 button {
@@ -18,12 +23,12 @@ button {
     border-width: 1px;
     border-radius: 0.25rem;
     color: white;
-    background-color: #4299e1;
-    border-color: #2b6cb0;
+    background-color: blue;
+    border-color: darkblue;
 }
 
 button:hover {
-    background-color: #2b6cb0;
+    background-color: darkblue;
 }
 
 h1, .buttonContainer {
