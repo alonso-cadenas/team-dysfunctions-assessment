@@ -6,6 +6,10 @@ body {
     margin: 0 auto;
 }
 
+a {
+    color: #2b6cb0;
+}
+
 button {
     padding: 0.5rem 1rem;
     cursor: pointer;

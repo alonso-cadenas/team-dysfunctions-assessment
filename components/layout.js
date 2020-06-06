@@ -5,7 +5,6 @@ import React from 'react';
 export function Layout(
     {
         children,
-        isHome = false
     }
 ) {
     return (
@@ -15,25 +14,18 @@ export function Layout(
                 <meta charSet='utf-8'/>
                 <meta name='viewport' content='initial-scale=1.0, width=device-width'/>
                 <meta name='description'
-                      content='Online assessment from The Five Dysfunctions of a Team by Patrick Lencioni'
+                      content='Online assessment from The Five Dysfunctions of a Team by Patrick Lencioni.'
                 />
             </Head>
             <header>
                 <nav>
-                    {
-                        !isHome && (
-                            <Link href='/' as={process.env.BACKEND_URL + '/'}>
-                                Home
-                            </Link>
-                        )
-                    }
-                    {
-                        isHome && (
-                            <Link href={'/assessment'} as={process.env.BACKEND_URL + '/assessment'}>
-                                Take Assessment
-                            </Link>
-                        )
-                    }
+                    <Link href='/' as={process.env.BACKEND_URL + '/'}>
+                        Home
+                    </Link>
+                    {' | '}
+                    <Link href={'/assessment'} as={process.env.BACKEND_URL + '/assessment'}>
+                        Take Assessment
+                    </Link>
                 </nav>
             </header>
 
