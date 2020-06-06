@@ -5,6 +5,7 @@ import React from 'react';
 export function Layout(
     {
         children,
+        isHome = false,
     }
 ) {
     return (
@@ -20,11 +21,10 @@ export function Layout(
             <header>
                 <nav>
                     <Link href='/' as={process.env.BACKEND_URL + '/'}>
-                        <a>Home</a>
+                        <a className={`navAnchor ${isHome ? 'active' : ''}`}>Home</a>
                     </Link>
-                    <span className='navSeparator'>|</span>
                     <Link href={'/assessment'} as={process.env.BACKEND_URL + '/assessment'}>
-                        <a>Take Assessment</a>
+                        <a className={`navAnchor ${!isHome ? 'active' : ''}`}>Take Assessment</a>
                     </Link>
                 </nav>
             </header>

@@ -4,7 +4,7 @@ import {Layout, Overview, References} from '../components';
 
 export default function Home() {
     return (
-        <Layout>
+        <Layout isHome>
             <h1>The Five Dysfunctions of a Team Online Assessment</h1>
             <p>
                 This is an online assessment from <i>The Five Dysfunctions of a Team</i> by Patrick Lencioni,
