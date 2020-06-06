@@ -52,10 +52,10 @@ export function QuestionList({submitAnswers, updateAnswer}) {
                 </ol>
 
                 <div className={'buttonContainer'}>
-                    <button type={'submit'}>Submit</button>
                     <Link href="/" as={process.env.BACKEND_URL + '/'}>
                         <button type={'button'}>Cancel</button>
                     </Link>
+                    <button type={'submit'}>Submit</button>
                 </div>
             </form>
         </div>
