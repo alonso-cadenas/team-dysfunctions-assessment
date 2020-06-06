@@ -20,11 +20,11 @@ export function Layout(
             <header>
                 <nav>
                     <Link href='/' as={process.env.BACKEND_URL + '/'}>
-                        Home
+                        <a>Home</a>
                     </Link>
-                    {' | '}
+                    <span className='navSeparator'>|</span>
                     <Link href={'/assessment'} as={process.env.BACKEND_URL + '/assessment'}>
-                        Take Assessment
+                        <a>Take Assessment</a>
                     </Link>
                 </nav>
             </header>

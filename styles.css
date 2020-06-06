@@ -48,3 +48,7 @@ p {
 .cancelButton:hover {
     background-color: lightgray;
 }
+
+.navSeparator {
+    margin: 0 0.75rem;
+}
