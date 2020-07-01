@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import React from 'react';
+import { Header } from './header';
 
 export function Layout({ children, isHome = false }) {
   return (
@@ -17,21 +17,8 @@ export function Layout({ children, isHome = false }) {
           content="Online assessment from The Five Dysfunctions of a Team by Patrick Lencioni."
         />
       </Head>
-      <header>
-        <nav>
-          <Link href="/" as={process.env.BACKEND_URL + '/'}>
-            <a className={`navAnchor ${isHome ? 'active' : ''}`}>Home</a>
-          </Link>
-          <Link
-            href={'/assessment'}
-            as={process.env.BACKEND_URL + '/assessment'}
-          >
-            <a className={`navAnchor ${!isHome ? 'active' : ''}`}>
-              Take Assessment
-            </a>
-          </Link>
-        </nav>
-      </header>
+
+      <Header isHome={isHome} />
 
       {children}
     </div>

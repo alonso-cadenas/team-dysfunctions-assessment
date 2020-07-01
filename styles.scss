@@ -1,5 +1,6 @@
 body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 1.3rem;
   padding: 1.5rem;
   width: 90%;
   max-width: 1040px;
@@ -11,16 +12,16 @@ body {
 a {
   color: blue;
   text-decoration: none;
-}
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 button {
   padding: 0.5rem 1rem;
   cursor: pointer;
-  font-family: "proxima-nova", sans-serif;
+  font-family: 'proxima-nova', sans-serif;
   font-size: 100%;
   margin: 0.5rem 1rem;
   border-width: 1px;
@@ -28,10 +29,10 @@ button {
   color: white;
   background-color: blue;
   border-color: darkblue;
-}
 
-button:hover {
-  background-color: darkblue;
+  &:hover {
+    background-color: darkblue;
+  }
 }
 
 .buttonContainer {
@@ -42,28 +43,10 @@ button:hover {
   color: black;
   background-color: white;
   border-color: black;
-}
 
-.cancelButton:hover {
-  background-color: lightgray;
-}
-
-nav {
-  margin-bottom: 2rem;
-}
-
-.navAnchor {
-  padding: 0.5rem 1rem;
-}
-
-.navAnchor:hover {
-  color: black;
-  text-decoration: none;
-  border-bottom-color: black;
-}
-
-.active {
-  border-bottom: 0.1875rem solid blue;
+  &:hover {
+    background-color: lightgray;
+  }
 }
 
 h2 {
@@ -78,8 +61,4 @@ h1 {
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
-}
-
-p {
-  font-size: 1.3rem;
 }
