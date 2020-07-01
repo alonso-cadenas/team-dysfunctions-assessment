@@ -1,4 +1,4 @@
-webpackHotUpdate("static/development/pages/assessment.js",{
+webpackHotUpdate("static/development/pages/index.js",{
 
 /***/ "./components/layout.js":
 /*!******************************!*\
