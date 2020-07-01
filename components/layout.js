@@ -16,6 +16,7 @@ export function Layout({ children, isHome = false }) {
           name="description"
           content="Online assessment from The Five Dysfunctions of a Team by Patrick Lencioni."
         />
+        <link rel="icon" href={'/favicon.ico'} />
       </Head>
 
       <Header isHome={isHome} />
