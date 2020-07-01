@@ -1,68 +1,85 @@
 body {
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-    padding: 1.5rem;
-    max-width: 750px;
-    margin: 0 auto;
+  font-family: "proxima-nova", sans-serif;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 1040px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-    color: blue;
-    text-decoration: none;
+  color: blue;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 button {
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 100%;
-    margin: 0.5rem 1rem;
-    border-width: 1px;
-    border-radius: 0.25rem;
-    color: white;
-    background-color: blue;
-    border-color: darkblue;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 100%;
+  margin: 0.5rem 1rem;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: blue;
+  border-color: darkblue;
 }
 
 button:hover {
-    background-color: darkblue;
+  background-color: darkblue;
 }
 
-h1, .buttonContainer {
-    text-align: center;
-}
-
-p {
-    text-align: justify;
+.buttonContainer {
+  text-align: center;
 }
 
 .cancelButton {
-    color: black;
-    background-color: white;
-    border-color: black;
+  color: black;
+  background-color: white;
+  border-color: black;
 }
 
 .cancelButton:hover {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 nav {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .navAnchor {
-    padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .navAnchor:hover {
-    color: black;
-    text-decoration: none;
-    border-bottom-color: black;
+  color: black;
+  text-decoration: none;
+  border-bottom-color: black;
 }
 
 .active {
-    border-bottom: .1875rem solid blue;
+  border-bottom: 0.1875rem solid blue;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+p {
+  font-size: 1.3rem;
 }
